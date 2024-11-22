@@ -4,7 +4,7 @@ for i in range(d):
     b=input()
     c=float(input())
     if(b=="+"):
-        print(f"{a} {b} {c}={a+c}")  print(a+" "+b+ " "+c+ "=",a+c)
+        print(f"{a} {b} {c}={a+c}")  #print(a+" "+b+ " "+c+ "=",a+c)
     if(b=="-"):
         print(f"{a} {b} {c}={a-c}")
     if(b=="*"):
@@ -13,3 +13,4 @@ for i in range(d):
         print(f"{a} {b} {c}={a/c}")
     if(b=="%"):
         print(f"{a} {b} {c}={a%c}")
+print(f"salam qaqa {a}")
