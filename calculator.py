@@ -14,3 +14,4 @@ for i in range(d):
     if(b=="%"):
         print(f"{a} {b} {c}={a%c}")
 print(f"salam qaqa {a}")
+
