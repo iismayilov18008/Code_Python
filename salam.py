@@ -1,19 +1,32 @@
-#salam = "name"
-#print(salam)
-#print(salam[3])
-#print(''.join(reversed(salam[:4])))
-# comment #
-#html = "<a> linkler </a>"
-#print(html[html.index("<a"):html.index(">")+1])
-#print(html[html.index("<a>"):html.index("</a>") + 4])
+# salam = "name"
+# print(salam)
+# print(salam[3])
+# print(''.join(reversed(salam[:4]))) 
+# html = "<a> linkler </a>"
+# print(html[html.index("<a"):html.index(">")+1]) 
+# print(html[html.index("<a>"):html.index("</a>") + 4])
 
-#ad=str(input("adiniz:"))
-#print(ad)
-#yas=int(input("yasiniz:"))
-#print(yas)
-#boolean=input("telebesiz")
-#boolean=(boolean == "True")
-#print(boolean)
+# ad=str(input("adiniz:"))
+# print(ad)
+# yas=int(input("yasiniz:"))
+# print(yas)
+# boolean=input("telebesiz: ")
+# boolean=(boolean == "Yessirrr")
+# print(boolean)
+
+
+# user_input = input("Enter something: ")
+# is_non_empty = bool(user_input)
+# print(is_non_empty)  # True if the user entered something, False if they pressed Enter without typing
+
+
+
+salam="salam"
+print(salam[:5])
+print("".join(reversed(salam[:4])))
+
+
+
 
 #ad="ismayil"
 #soyad="ismayilov"
