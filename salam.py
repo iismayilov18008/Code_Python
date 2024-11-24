@@ -21,9 +21,9 @@
 
 
 
-salam="salam"
-print(salam[:5])
-print("".join(reversed(salam[:4])))
+# salam="salam"
+# print(salam[:5])
+# print("".join(reversed(salam[:4])))
 
 
 
