@@ -1,3 +1,4 @@
+# yarimciq
 ipaddr=input("IpAddr: ")
 ip=ipaddr.split(".")
 forth=int(ip[3])

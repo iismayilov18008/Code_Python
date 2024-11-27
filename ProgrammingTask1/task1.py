@@ -1,3 +1,4 @@
+# bitti
 cumle=input("enter sentence: ")
 array=cumle.split()
 
