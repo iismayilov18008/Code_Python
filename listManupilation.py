@@ -43,7 +43,7 @@
 # # here sort works without any variable assignment
 
 
-
+dict = {"key1":"salam", }
 
 
 
