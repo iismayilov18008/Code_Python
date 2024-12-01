@@ -1,12 +1,33 @@
 # bitti
+# give the input like: 10.10.10.10./24 
 ip1=input("ip1: ")
 ip2=input("ip2: ")
 
 i1=ip1.split(".")
 i2=ip2.split(".")
+if (len(i1) != 5 or len(i2) != 5  ):
+    print("IP sehvdir")
+    exit()
 
-sub1=int(i1[3].split("/")[1])
-sub2=int(i1[3].split("/")[1])
+sub1=int(i1[4].split("/")[1])
+sub2=int(i2[4].split("/")[1])
+
+counter=0
+
+for i in range(len(i1)-1):
+    if (int(i1[i])>255 or int(i1[i])<0 ):
+        counter+=1
+for i in range(len(i2)-1):
+    if (int(i2[i])>255 or int(i2[i])<0 ):
+        counter+=1
+
+if(counter>0):
+    print("daxil edilen ip sehvdir")
+    exit()
+
+if(ip1==ip2):
+    print("IP ler eynidir")
+    exit()
 
 if(sub1!=sub2):
     print("elaqe yaradila bilmez cunki subnet ler ferqlidir.")
