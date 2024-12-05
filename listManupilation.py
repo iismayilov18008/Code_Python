@@ -32,7 +32,7 @@
 # list5.insert(1, "salam qaqa") # adds the element between 0 and 1 st element
 # print(list5)
 
-# # array sorting
+# array sorting
 # list11=[1, 3, 2, 5, 2, 4, 6, 8, 3, 6, 6, 67, 89, 23, 4, 3]
 # print(sorted(list11)) # list11.sort() will not work inside of a print
 # list11.sort()
@@ -42,8 +42,12 @@
 # listnew=sorted(list11, reverse=True)
 # print(listnew) # [89, 67, 23, 8, 6, 6, 6, 5, 4, 4, 3, 3, 3, 2, 2, 1]
 # print(reversed(listnew))
-# but the listnew.reversed() works like sort and changes the array copletely
-# # here sort works without any variable assignment
+# lissst=[3, 2, 4, 6, 3, 5, 6, 66, 2, 4, 3]
+
+# print(list(reversed(lissst))) # [3, 4, 2, 66, 6, 5, 3, 6, 4, 2, 3]
+
+# # but the listnew.reversed() works like sort and changes the array copletely
+# here sort works without any variable assignment
 
 # del --
 # we can use del to delete any object like class,  array, list and so on. 
@@ -63,7 +67,7 @@
 # soz="Salam"
 # print(list(soz)) # ['S', 'a', 'l', 'a', 'm']
 # print([i.upper() for i in list(soz)]) # ['S', 'A', 'L', 'A', 'M']
-# for a aid bele ferqlii cur assignmentlerin hamini bu tezde [] morterizeler daxilinde yazilir.
+# for a aid bele ferqlii cur assign lerin hamini bu tezde [] morterizeler daxilinde yazilir.
 
 # list=["a", "l", "m", "a"]
 # print("".join(list)) # alma
@@ -97,7 +101,11 @@
 # phone["color"] = "Blue"
 # phone["price"] = 999
 
-# set --> search for "set"
+# set --> search for "set"  (mutable, no duplicates, unordered)
+set={1, 2, 3}
+print(set, type(set)) # u can not change the variable in set like set[0]=6
+# but u can add or remove the value using set.add() and set.remove()
+
 
 
 
