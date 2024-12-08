@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("salamlar")
+        console.log("salam")
+        var user="Nicat"
+        var user="Vinyl"
+        let pass="pass" // u can not declare it again in the next lines, but u can assign some values to it
+        pass ="salam"
+        const name = "ismayil"
+        //name="amiray" // bu mumkun deil
+        console.log(user)
+        console.log(pass)        
+    </script>
+
+    <div>
+        <label for="eded1">Enter The First Number</label>
+        <input type="number" name="eded1" id="eded1">
+        <label for="eded2">Enter The Second Number</label>
+        <input type="number" name="eded2" id="eded2">
+        <br>
+        <button type="submit" id="button">Enter</button>
+        <p>Result: <span id="result"> </span> </p>
+        <script>
+            document.getElementById("button").; =function(){
+                let a = document.getElementById("eded1")
+                let b = document.getElementById("eded2")
+                let c= +a.value+ +b.value
+                console.log(c) 
+                document.getElementById("result").textContent = c
+            }
+        </script>
+
+    </div>
+</body>
+</html>
