@@ -1,2 +1,2 @@
-()) # salam necesen
+() # salam necesen
 # print(f.readlines())
