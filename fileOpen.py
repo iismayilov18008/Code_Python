@@ -26,6 +26,7 @@ for line in lines:
 # f = open("pic.name", "rb")
 
 # DAY 4 REC 4 BITIR!!!
+f.close()
 
 
 
