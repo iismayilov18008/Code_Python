@@ -1,0 +1,102 @@
+-- CREATE TABLE my_table1 (
+--     id INT AUTO_INCREMENT PRIMARY KEY,
+--     name VARCHAR(50),
+--     age INT,
+--     email VARCHAR(100)
+-- );
+
+
+-- select * from my_table1;
+
+-- show tables
+
+-- select * from my_table
+
+-- insert into my_table (id, name, age, email)
+-- values (1, 'EmirayTheQara', 18, 'amiraykb@code.edu.az');
+
+-- select * from my_table 
+
+-- insert into my_table(id, name, age, email)
+-- values (0, 'IsmayilTheWhite', 20, 'ismayilgi@code.edu.az')
+
+-- SELECT DISTINCT id, name, age, email 
+-- FROM my_table;
+
+
+
+-- DROP TABLE my_table;
+
+-- create table xackerler(
+-- id int auto_increment primary key,
+-- name varchar(50) deafult 'ismayil',
+-- age int,
+-- email varchar(100)
+-- );
+
+-- show tables
+
+-- insert into xackerler(name, age, email)
+-- values('Vinly', 19, 'nicat@code.edu.az')
+
+
+-- select * from xackerler;
+
+-- show databases;
+
+-- select * from xackerler;
+
+-- select * from xackerler where age>=18 order by age desc limit 3;
+
+-- offset 1 select ederken ilk 1 column u gostermir, 2 yazsaq ilk 2 sin gostermiyeck 
+
+-- order by 3 --> etsek demeli 3 cu column a gore order edeceyik, bunun komeyi ile column saylarini tapa bilerik
+
+-- update xackerler set name='VinlyNicat' where id=3;
+
+-- delete from xackerler where id =3; 
+
+-- set le deyerlerin id ve yas kimi deyerlerinide artira bilerik meselen 
+
+-- update hackerler set id=id + 1 where id>=2 
+
+-- drop table users;
+
+-- create table users (
+-- id int auto_increment primary key,
+-- username varchar(50),
+-- password CHAR(64) not null,
+-- role enum ("admin", "normal") default "normal"
+-- );
+
+-- select * from users;
+
+-- INSERT INTO users (username, password, role)
+-- VALUES 
+--     ("administrator", SHA2("password", 256), "admin");
+-- INSERT INTO users (username, password)
+-- VALUES    
+--     ("nuraya", SHA2("password", 256)),
+--     ("hikmat", SHA2("password", 256)),
+--     ("nicat", SHA2("password", 256));
+
+-- select * from users;
+
+-- update users  set password=sha2("1", 256) where id=1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
