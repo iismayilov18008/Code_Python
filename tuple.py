@@ -1,0 +1,5 @@
+tuple=(1, 2, "salam")
+new_set=set([1, 2, "salam", 2, 1, 4])
+print((tuple))
+print(len(new_set))
+print(new_set)

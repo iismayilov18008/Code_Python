@@ -1,0 +1,8 @@
+Missing: Content-Security-Policy
+Missing: X-Frame-Options
+Missing: X-Content-Type-Options
+Missing: Strict-Transport-Security
+Missing: Referrer-Policy
+Missing: Permissions-Policy
+Missing: Feature-Policy
+Missing: Expect-CT

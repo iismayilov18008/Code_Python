@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form id="form">
+        <h1>Registration</h1>
+        <label for="username">Enter your username: </label>
+        <input type="text" name="username" id="username" required>
+        <br><br>
+        <label for="password">Enter your password: </label>
+        <input type="password" name="password" id="password" required>
+        <br><br>
+        <label for="email">Enter your email: </label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <label for="TelephoneNumber">Enter your phone number: </label>
+        <input type="tel" name="TelephoneNumber" id="TelephoneNumber" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="result">
+    </div>
+    <script>
+        let result = document.getElementById("result");
+
+        function clearResult() {
+            result.innerHTML = "";
+        }
+
+        function addResult(text) {
+            const p = document.createElement("p");
+            p.textContent = text;
+            result.appendChild(p);
+        }
+
+        document.getElementById("form").onsubmit = function (e){
+            e.preventDefault();
+
+            let has_error = false;
+
+            let username = document.getElementById("username").value
+            let password = document.getElementById("password").value
+            let TelephoneNumber = document.getElementById("TelephoneNumber").value
+            clearResult()
+            if(/^[a-zA-Z0-9]+$/.test(username) === false){
+                has_error = true
+                addResult("Username must contain numbers and letters only!")
+            }
+
+            if (/^\+994[0-9]{8}$/.test(TelephoneNumber) === false){
+                has_error = true
+                addResult("Phone number must be in format of +994xxxxxxxx")
+            }
+            if (password.length > 50 || password.length < 8){
+                has_error = true
+                addResult("Password legth must be between 8 and 50 characters")
+
+            }
+            if (/[a-z]/.test(password) === false){
+                has_error = true
+                addResult("Password must contain a lowercase letter.")
+            }
+            if (/[A-Z]/.test(password) === false){
+                has_error = true
+                addResult("Password must contain a uppercase letter.")
+
+            }
+            if (/[0-9]/.test(password) === false){
+                has_error = true
+                addResult("Password must contain a digit.")
+
+            }
+            if (/[!@#$%^&*(),.?":{}|<>[\]\\/-]/.test(password) === false){
+                has_error = true
+                addResult("Password must contain a special character.")
+
+            }
+            if (! has_error){
+                addResult("Registration successful!")
+            }
+        }
+    </script>
+</body>
+</html>
